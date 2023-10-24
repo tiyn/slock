@@ -1,5 +1,5 @@
 /* user and group to drop privileges to */
-static const char *user  = "nobody";
+static const char *user  = "user";
 static const char *group = "nobody";
 
 static const char *colorname[NUMCOLS] = {
@@ -10,3 +10,6 @@ static const char *colorname[NUMCOLS] = {
 
 /* treat a cleared input like a wrong password (color) */
 static const int failonclear = 1;
+
+/* Background image path, should be available to the user above */
+static const char* background_image = "/home/user/.config/lock.png";
