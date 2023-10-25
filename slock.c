@@ -31,7 +31,6 @@
 char *argv0;
 
 enum {
-	BACKGROUND,
 	INIT,
 	INPUT,
 	FAILED,
