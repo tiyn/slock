@@ -15,7 +15,7 @@ static const int failonclear = 1;
 /* Background image path, should be available to the user above */
 static const char* background_image = "/home/user/.local/share/lock";
 /* insert grid pattern with scale 1:1, the size can be changed with logosize */
-static const int logosize = 75;
+static const int logosize = 40;
 static const int logow = 10;	/* grid width and height for right center alignment*/
 static const int logoh = 15;
 
