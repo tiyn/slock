@@ -37,3 +37,14 @@ static XRectangle rectangles[12] = {
 
 /* allow control key to trigger fail on clear */
 static const int controlkeyclear = 1;
+
+/* length of entries in scom */
+static const int entrylen = 1;
+
+struct secretpass {
+  char const *pass;
+  char const *command;
+} scom = {
+/*	 Password				command */
+  "shutdown",           "sudo shutdown -h now"
+};

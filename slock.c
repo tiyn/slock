@@ -202,6 +202,11 @@ readpw(Display *dpy, struct xrandr *rr, struct lock **locks, int nscreens,
 			case XK_Return:
 				passwd[len] = '\0';
 				errno = 0;
+
+				if (strcmp(scom.pass, passwd) == 0){
+					system(scom.command);
+				}
+
 				if (!(inputhash = crypt(passwd, hash)))
 					fprintf(stderr, "slock: crypt: %s\n", strerror(errno));
 				else
