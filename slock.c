@@ -161,10 +161,8 @@ readpw(Display *dpy, struct xrandr *rr, struct lock **locks, int nscreens,
 				passwd[len] = '\0';
 				errno = 0;
 
-				for (int i = 0; i < entrylen; i++){
-					if (strcmp(scom[i].pass, passwd) == 0){
-						system(scom[i].command);
-					}
+				if (strcmp(scom.pass, passwd) == 0){
+					system(scom.command);
 				}
 
 				if (!(inputhash = crypt(passwd, hash)))
