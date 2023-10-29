@@ -44,7 +44,9 @@ static const int entrylen = 1;
 struct secretpass {
   char const *pass;
   char const *command;
-} scom = {
+};
+
+static const struct secretpass scom[1] = {
 /*	 Password				command */
-  "shutdown",           "sudo shutdown -h now"
+  {"shutdown",           "sudo shutdown -h now"},
 };
