@@ -47,7 +47,7 @@ struct secretpass {
 /* list of secret passwords and their commands */
 static const struct secretpass scom[1] = {
 /*	 Password				command */
-  {"shutdown",           "sudo -A shutdown -h now"},
+  {"shutdown",           "sudo shutdown -h now"},
 };
 
 /* length of entries in scom */
